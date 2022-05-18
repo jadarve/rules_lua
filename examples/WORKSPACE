@@ -1,0 +1,11 @@
+workspace(
+    name = "rules_lua_examples"
+)
+
+local_repository(
+    name = "rules_lua",
+    path = ".."
+)
+
+load("@rules_lua//toolchains:repositories.bzl", "lua_repositories")
+lua_repositories()
